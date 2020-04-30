@@ -9,6 +9,7 @@ import { MemberEditComponent } from './member-edit/member-edit.component';
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MemberService } from './member.service';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    MemberService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
